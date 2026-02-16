@@ -1,0 +1,119 @@
+/* ===== GLOBAL RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2, #6dd5ed);
+    background-size: 300% 300%;
+    animation: gradientMove 8s ease infinite;
+    display: flex;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+/* ===== HEADER ===== */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    opacity: 0.9;
+}
+
+/* ===== SECTION ===== */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    border-left: 5px solid #ffdd57;
+    padding-left: 10px;
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+    transition: transform 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateX(8px);
+}
+
+/* ===== SKILLS ===== */
+.skill {
+    margin-bottom: 15px;
+}
+
+.bar {
+    background: rgba(255,255,255,0.3);
+    height: 10px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 20px;
+}
+
+/* CHANGE SKILL PERCENTAGE WIDTH HERE */
+.html { width: 90%; background: #ff6b6b; }
+.python { width: 85%; background: #4ecdc4; }
+.sql { width: 80%; background: #ffe66d; }
+.data { width: 75%; background: #1dd1a1; }
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+}
